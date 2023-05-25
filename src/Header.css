@@ -1,0 +1,58 @@
+.header{
+    height:60px;
+    display:flex;
+    align-items:center;
+    background-color: rgb(31, 30, 30);
+    position: sticky;
+    top:0;
+    z-index:100;
+}
+.header_searchIcon{
+    padding:5px;
+    height:22px !important;
+    background-color: #cd9042;
+}
+.header_search{
+    display:flex;
+    flex:1;
+    align-items: center;
+    border-radius:24px;
+}
+.header_searchInput{
+    height: 22px;
+    padding: 5px;
+    width:100%;
+    border:none;
+}
+.header_nav{
+  display:flex;
+  justify-content: space-evenly;
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white;
+
+}
+.Header_optionLineOne{
+    font-size:10px;
+}
+.Header_optionLinetwo{
+    font-size:13px;
+    font-weight:800;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header_optionBasket{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.header_basketCount{
+    margin-left: 10px;
+    margin-right:10px ;
+}
