@@ -3047,3 +3047,59 @@ SyntaxError: Unexpected token 'export'
 [debug] [2023-05-27T16:09:40.970Z] File F:\abdul\amazon-clone-app-main\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File F:\\abdul\\amazon-clone-app-main\\functions\\index.js changed, reloading triggers"}}
 [debug] [2023-05-27T16:09:40.986Z] shutdown requested via /__/quitquitquit
 
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-05-27T16:09:41.875Z] Serving at port 8541
+
+[debug] [2023-05-27T16:09:41.972Z] Validating nodejs source
+[debug] [2023-05-27T16:09:49.187Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-27T16:09:49.188Z] Building nodejs source
+[debug] [2023-05-27T16:09:49.188Z] Failed to find version of module node: reached end of search path F:\abdul\amazon-clone-app-main\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-05-27T16:09:49.192Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-27T16:09:49.212Z] Found firebase-functions binary at 'F:\abdul\amazon-clone-app-main\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-27T16:09:49.234Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'
+[debug] [2023-05-27T16:09:49.235Z] Failed to parse functions.yaml incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token 'export'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token 'export'\n                                         ^"}
+[debug] [2023-05-27T16:09:49.256Z] shutdown requested via /__/quitquitquit
+
+[debug] [2023-05-27T16:09:49.258Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-05-27T16:09:50.160Z] Serving at port 8377
+
+[debug] [2023-05-27T16:09:50.876Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'
+[debug] [2023-05-27T16:09:50.877Z] Failed to parse functions.yaml incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token 'export'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token 'export'\n                                         ^"}
+[debug] [2023-05-27T16:09:50.943Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'"}}
