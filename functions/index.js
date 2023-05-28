@@ -3,8 +3,7 @@
 const functions = require('firebase-functions');
 const express = require("express");
 const cors = require("cors");
-const { getBasketTotal } = require('../src/reducer');
-const stripe = require("stripe")("sk_test_51NCHF9B7Kf7VS2uX7xcRGXi3fw1mmJSGGSUIUfvflMvnOdTIl9I9Cm0GhVejNiAFmkliKtokRwktVACqgHp1En2Y009GNjZu5P")
+const stripe = require("stripe")("sk_test_51NCHF9B7Kf7VS2uX7xcRGXi3fw1mmJSGGSUIUfvflMvnOdTIl9I9Cm0GhVejNiAFmkliKtokRwktVACqgHp1En2Y009GNjZu5P");
 //API 
 
 //app config
@@ -17,11 +16,12 @@ app.get('/',(request,response)=>response.status(200).send('Hello world'))
 app.post('/payment/create',async (request,response)=>{
     const total = request.query.total;
     console.log("payment Request recieved BOOM! for this amount>>",total)
-    const paymentIntent = await stripe.create({
+    const paymentIntent = await stripe.paymentIntent.create({
         amount: total,
         currency: "usd",
     });
-   response.status(201).send({
+    //ok - created
+    response.status(201).send({
       clientSecret: paymentIntent.client_secret,
    })
 })

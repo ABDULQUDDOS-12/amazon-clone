@@ -5,6 +5,7 @@ import Home from './Home';
 import Checkout from './Checkout';
 import Login from './Login';
 import Payment from './Payment'
+import Orders from "./Orders";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import {auth} from "./firebase"
@@ -46,7 +47,8 @@ function App() {
               <Payment />
             </Elements>
           } />
-         
+         <Route path="/orders" element ={<Orders/> }/>
+
           
           <Route path="/" element={<Home />} />
           <Route path="/payment" element={<Payment/>}/>

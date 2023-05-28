@@ -3103,3 +3103,4 @@ SyntaxError: Unexpected token 'export'
 [debug] [2023-05-27T16:09:50.943Z] shutdown requested via /__/quitquitquit
 
 [error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'"}}
+[debug] [2023-05-27T16:13:38.013Z] Received signal SIGHUP 1

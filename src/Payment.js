@@ -29,6 +29,7 @@ setClientSecret(response.data.clientSecret)
    }
 getClientSecret();
    },[basket])
+   console.log('The secret is >>>',clientSecret)
    const handleSubmit = async (e) =>{
       //do all the fancy stripe things
        e.preventDefault();
@@ -42,9 +43,11 @@ getClientSecret();
         setSucceeded(true)
         setError(null)
         setProcessing(false)
-        navigate('/orders') 
+        dispatch({
+         type:'EMPTY_BASKET',
+        })
       })
-       
+      navigate('/orders') 
       
    }
    const handleChange =e=>{
